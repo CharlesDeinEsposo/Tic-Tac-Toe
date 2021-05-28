@@ -21,5 +21,10 @@ namespace Tic_Tac_Toe
         {
 
         }
+
+        private void A1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
