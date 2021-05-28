@@ -40,9 +40,9 @@ namespace Tic_Tac_Toe
             this.C2 = new System.Windows.Forms.Button();
             this.C1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.quitgame = new System.Windows.Forms.Button();
             this.newgame = new System.Windows.Forms.Button();
+            this.quitgame = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -54,9 +54,11 @@ namespace Tic_Tac_Toe
             this.A1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.A1.FlatAppearance.BorderSize = 8;
             this.A1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.A1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.A1.Font = new System.Drawing.Font("ToyBox", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.A1.ForeColor = System.Drawing.Color.Black;
             this.A1.Location = new System.Drawing.Point(13, 89);
             this.A1.Name = "A1";
+            this.A1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.A1.Size = new System.Drawing.Size(145, 137);
             this.A1.TabIndex = 0;
             this.A1.UseVisualStyleBackColor = false;
@@ -68,6 +70,7 @@ namespace Tic_Tac_Toe
             this.A2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.A2.FlatAppearance.BorderSize = 8;
             this.A2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.A2.Font = new System.Drawing.Font("ToyBox", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.A2.Location = new System.Drawing.Point(164, 89);
             this.A2.Name = "A2";
             this.A2.Size = new System.Drawing.Size(145, 137);
@@ -81,6 +84,7 @@ namespace Tic_Tac_Toe
             this.A3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.A3.FlatAppearance.BorderSize = 8;
             this.A3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.A3.Font = new System.Drawing.Font("ToyBox", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.A3.Location = new System.Drawing.Point(315, 89);
             this.A3.Name = "A3";
             this.A3.Size = new System.Drawing.Size(145, 137);
@@ -94,6 +98,7 @@ namespace Tic_Tac_Toe
             this.B3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.B3.FlatAppearance.BorderSize = 8;
             this.B3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B3.Font = new System.Drawing.Font("ToyBox", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.B3.Location = new System.Drawing.Point(315, 232);
             this.B3.Name = "B3";
             this.B3.Size = new System.Drawing.Size(145, 137);
@@ -119,6 +124,7 @@ namespace Tic_Tac_Toe
             this.B1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.B1.FlatAppearance.BorderSize = 8;
             this.B1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B1.Font = new System.Drawing.Font("ToyBox", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.B1.Location = new System.Drawing.Point(13, 232);
             this.B1.Name = "B1";
             this.B1.Size = new System.Drawing.Size(145, 137);
@@ -132,6 +138,7 @@ namespace Tic_Tac_Toe
             this.C3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.C3.FlatAppearance.BorderSize = 8;
             this.C3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.C3.Font = new System.Drawing.Font("ToyBox", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.C3.Location = new System.Drawing.Point(315, 375);
             this.C3.Name = "C3";
             this.C3.Size = new System.Drawing.Size(145, 137);
@@ -145,6 +152,7 @@ namespace Tic_Tac_Toe
             this.C2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.C2.FlatAppearance.BorderSize = 8;
             this.C2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.C2.Font = new System.Drawing.Font("ToyBox", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.C2.Location = new System.Drawing.Point(164, 375);
             this.C2.Name = "C2";
             this.C2.Size = new System.Drawing.Size(145, 137);
@@ -158,6 +166,7 @@ namespace Tic_Tac_Toe
             this.C1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.C1.FlatAppearance.BorderSize = 8;
             this.C1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.C1.Font = new System.Drawing.Font("ToyBox", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.C1.Location = new System.Drawing.Point(13, 375);
             this.C1.Name = "C1";
             this.C1.Size = new System.Drawing.Size(145, 137);
@@ -176,18 +185,20 @@ namespace Tic_Tac_Toe
             this.panel1.Size = new System.Drawing.Size(447, 68);
             this.panel1.TabIndex = 9;
             // 
-            // button1
+            // newgame
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatAppearance.BorderSize = 8;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(164, 231);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 137);
-            this.button1.TabIndex = 10;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button_click);
+            this.newgame.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.newgame.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.newgame.FlatAppearance.BorderSize = 8;
+            this.newgame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newgame.Font = new System.Drawing.Font("ToyBox", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.newgame.ForeColor = System.Drawing.Color.Orange;
+            this.newgame.Location = new System.Drawing.Point(22, 7);
+            this.newgame.Name = "newgame";
+            this.newgame.Size = new System.Drawing.Size(191, 49);
+            this.newgame.TabIndex = 13;
+            this.newgame.Text = "New Game";
+            this.newgame.UseVisualStyleBackColor = false;
             // 
             // quitgame
             // 
@@ -204,20 +215,19 @@ namespace Tic_Tac_Toe
             this.quitgame.Text = "Quit Game";
             this.quitgame.UseVisualStyleBackColor = false;
             // 
-            // newgame
+            // button1
             // 
-            this.newgame.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.newgame.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.newgame.FlatAppearance.BorderSize = 8;
-            this.newgame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.newgame.Font = new System.Drawing.Font("ToyBox", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.newgame.ForeColor = System.Drawing.Color.Orange;
-            this.newgame.Location = new System.Drawing.Point(22, 7);
-            this.newgame.Name = "newgame";
-            this.newgame.Size = new System.Drawing.Size(191, 49);
-            this.newgame.TabIndex = 13;
-            this.newgame.Text = "New Game";
-            this.newgame.UseVisualStyleBackColor = false;
+            this.button1.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.FlatAppearance.BorderSize = 8;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("ToyBox", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(164, 231);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(145, 137);
+            this.button1.TabIndex = 10;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button_click);
             // 
             // label1
             // 

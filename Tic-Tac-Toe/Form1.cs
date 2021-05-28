@@ -39,6 +39,38 @@ namespace Tic_Tac_Toe
                 b.Text = "O";
 
             turn = !turn;
+            b.Enabled = false;
+
+            winner_checker();
+        }
+        private void winner_checker()
+        {
+            bool player_wins = false;
+            //Horizontal
+            if ((A1.Text == A2.Text) && (A2.Text == A3.Text))
+                player_wins = true;
+            if ((B1.Text == B2.Text) && (B2.Text == B3.Text))
+                player_wins = true;
+            if ((C1.Text == C2.Text) && (C2.Text == C3.Text))
+                player_wins = true;
+
+            //Vertical
+            if ((A1.Text == B1.Text) && (B1.Text == C1.Text))
+                player_wins = true;
+            if ((A2.Text == B2.Text) && (B2.Text == C2.Text))
+                player_wins = true;
+            if ((A3.Text == B3.Text) && (B3.Text == C3.Text))
+                player_wins = true;
+
+            //Diagonal
+            if ((A1.Text == B2.Text) && (B2.Text == C3.Text))
+                player_wins = true;
+            if ((C1.Text == B2.Text) && (B2.Text == A3.Text))
+                player_wins = true;
+
+
+        }
+
         }
     }
 }
