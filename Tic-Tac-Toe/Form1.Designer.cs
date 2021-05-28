@@ -42,7 +42,6 @@ namespace Tic_Tac_Toe
             this.panel1 = new System.Windows.Forms.Panel();
             this.newgame = new System.Windows.Forms.Button();
             this.quitgame = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -112,11 +111,13 @@ namespace Tic_Tac_Toe
             this.B2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.B2.FlatAppearance.BorderSize = 8;
             this.B2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B2.Font = new System.Drawing.Font("ToyBox", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.B2.Location = new System.Drawing.Point(164, 232);
             this.B2.Name = "B2";
             this.B2.Size = new System.Drawing.Size(145, 137);
             this.B2.TabIndex = 4;
             this.B2.UseVisualStyleBackColor = false;
+            this.B2.Click += new System.EventHandler(this.button_click);
             // 
             // B1
             // 
@@ -215,20 +216,6 @@ namespace Tic_Tac_Toe
             this.quitgame.Text = "Quit Game";
             this.quitgame.UseVisualStyleBackColor = false;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatAppearance.BorderSize = 8;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("ToyBox", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(164, 231);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 137);
-            this.button1.TabIndex = 10;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button_click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -266,7 +253,6 @@ namespace Tic_Tac_Toe
             this.ClientSize = new System.Drawing.Size(472, 599);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.C3);
             this.Controls.Add(this.C2);
@@ -302,7 +288,6 @@ namespace Tic_Tac_Toe
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button newgame;
         private System.Windows.Forms.Button quitgame;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }
