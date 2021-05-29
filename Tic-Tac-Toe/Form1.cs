@@ -115,8 +115,16 @@ namespace Tic_Tac_Toe
 
             if (player_wins)
             {
-                disableButtons();
-                
+                A1.Enabled = false;
+                A2.Enabled = false;
+                A3.Enabled = false;
+                B1.Enabled = false;
+                B2.Enabled = false;
+                B3.Enabled = false;
+                C1.Enabled = false;
+                C2.Enabled = false;
+                C3.Enabled = false;
+
                 String winner = "";
                 if (turn)
                     winner = "O";
@@ -131,17 +139,7 @@ namespace Tic_Tac_Toe
                     MessageBox.Show("Draw");
             }
         }
-        private void disableButtons()
-        {
-            try {
-                foreach (Control c in Controls)
-                {
-                    Button b = (Button)c;
-                    b.Enabled = false;
-                }
-            }
-            catch { }
-        }
+
 
         private void quitgame_Click(object sender, EventArgs e)
         {
