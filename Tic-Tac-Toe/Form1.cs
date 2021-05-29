@@ -42,7 +42,7 @@ namespace Tic_Tac_Toe
             }
             turn = !turn;
             b.Enabled = false;
-
+            turn_count++;
             winner_checker();
         }
         private void winner_checker()
@@ -114,6 +114,8 @@ namespace Tic_Tac_Toe
 
             if (player_wins)
             {
+                disableButtons();
+                
                 String winner = "";
                 if (turn)
                     winner = "O";
@@ -121,10 +123,61 @@ namespace Tic_Tac_Toe
                     winner = "X";
 
                 MessageBox.Show("Player " + winner + " wins!");
-
             }
-
+            else
+            {
+                if (turn_count == 9)
+                    MessageBox.Show("Draw");
+            }
+        }
+        private void disableButtons()
+        {
+            try {
+                foreach (Control c in Controls)
+                {
+                    Button b = (Button)c;
+                    b.Enabled = false;
+                }
+            }
+            catch { }
         }
 
+        private void quitgame_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void newgame_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                turn_count = 0;
+
+                A1.Enabled = true;
+                A2.Enabled = true;
+                A3.Enabled = true;
+                B1.Enabled = true;
+                B2.Enabled = true;
+                B3.Enabled = true;
+                C1.Enabled = true;
+                C2.Enabled = true;
+                C3.Enabled = true;
+
+                A1.Text = "";
+                A2.Text = "";
+                A3.Text = "";
+                B1.Text = "";
+                B2.Text = "";
+                B3.Text = "";
+                C1.Text = "";
+                C2.Text = "";
+                C3.Text = "";
+            }
+            catch { }
+        }
+            
         }
     }
+
+          
+ 

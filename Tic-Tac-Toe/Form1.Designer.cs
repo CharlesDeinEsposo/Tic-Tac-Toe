@@ -201,6 +201,7 @@ namespace Tic_Tac_Toe
             this.newgame.TabIndex = 13;
             this.newgame.Text = "New Game";
             this.newgame.UseVisualStyleBackColor = false;
+            this.newgame.Click += new System.EventHandler(this.newgame_Click);
             // 
             // quitgame
             // 
@@ -216,6 +217,7 @@ namespace Tic_Tac_Toe
             this.quitgame.TabIndex = 12;
             this.quitgame.Text = "Quit Game";
             this.quitgame.UseVisualStyleBackColor = false;
+            this.quitgame.Click += new System.EventHandler(this.quitgame_Click);
             // 
             // PlayerX
             // 
@@ -278,6 +280,7 @@ namespace Tic_Tac_Toe
             this.Controls.Add(this.A3);
             this.Controls.Add(this.A2);
             this.Controls.Add(this.A1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "TicTacToe";
