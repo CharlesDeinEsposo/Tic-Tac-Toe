@@ -42,8 +42,9 @@ namespace Tic_Tac_Toe
             this.panel1 = new System.Windows.Forms.Panel();
             this.newgame = new System.Windows.Forms.Button();
             this.quitgame = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.PlayerX = new System.Windows.Forms.Label();
+            this.PlayerO = new System.Windows.Forms.Label();
+            this.turn_label = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -216,32 +217,45 @@ namespace Tic_Tac_Toe
             this.quitgame.Text = "Quit Game";
             this.quitgame.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // PlayerX
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Orange;
-            this.label1.Font = new System.Drawing.Font("ToyBox", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(123, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(0);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(3, 0, 1, 3);
-            this.label1.Size = new System.Drawing.Size(75, 71);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "X";
+            this.PlayerX.AutoSize = true;
+            this.PlayerX.BackColor = System.Drawing.Color.Gray;
+            this.PlayerX.Font = new System.Drawing.Font("ToyBox", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerX.Location = new System.Drawing.Point(256, 9);
+            this.PlayerX.Margin = new System.Windows.Forms.Padding(0);
+            this.PlayerX.Name = "PlayerX";
+            this.PlayerX.Padding = new System.Windows.Forms.Padding(3, 0, 1, 3);
+            this.PlayerX.Size = new System.Drawing.Size(75, 71);
+            this.PlayerX.TabIndex = 11;
+            this.PlayerX.Text = "X";
             // 
-            // label2
+            // PlayerO
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Orange;
-            this.label2.Font = new System.Drawing.Font("ToyBox", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(268, 9);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(3, 0, 1, 3);
-            this.label2.Size = new System.Drawing.Size(77, 71);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "O";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.PlayerO.AutoSize = true;
+            this.PlayerO.BackColor = System.Drawing.Color.Gray;
+            this.PlayerO.Font = new System.Drawing.Font("ToyBox", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerO.Location = new System.Drawing.Point(334, 9);
+            this.PlayerO.Name = "PlayerO";
+            this.PlayerO.Padding = new System.Windows.Forms.Padding(3, 0, 1, 3);
+            this.PlayerO.Size = new System.Drawing.Size(77, 71);
+            this.PlayerO.TabIndex = 12;
+            this.PlayerO.Text = "O";
+            this.PlayerO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // turn_label
+            // 
+            this.turn_label.AutoSize = true;
+            this.turn_label.BackColor = System.Drawing.Color.Gray;
+            this.turn_label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.turn_label.Font = new System.Drawing.Font("ToyBox", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.turn_label.Location = new System.Drawing.Point(49, 9);
+            this.turn_label.Margin = new System.Windows.Forms.Padding(0);
+            this.turn_label.Name = "turn_label";
+            this.turn_label.Padding = new System.Windows.Forms.Padding(3, 0, 1, 3);
+            this.turn_label.Size = new System.Drawing.Size(205, 71);
+            this.turn_label.TabIndex = 13;
+            this.turn_label.Text = "TURN:";
             // 
             // TicTacToe
             // 
@@ -251,8 +265,9 @@ namespace Tic_Tac_Toe
             this.BackgroundImage = global::Tic_Tac_Toe.Properties.Resources._5570238;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(472, 599);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.turn_label);
+            this.Controls.Add(this.PlayerO);
+            this.Controls.Add(this.PlayerX);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.C3);
             this.Controls.Add(this.C2);
@@ -288,8 +303,9 @@ namespace Tic_Tac_Toe
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button newgame;
         private System.Windows.Forms.Button quitgame;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label PlayerX;
+        private System.Windows.Forms.Label PlayerO;
+        private System.Windows.Forms.Label turn_label;
     }
 }
 

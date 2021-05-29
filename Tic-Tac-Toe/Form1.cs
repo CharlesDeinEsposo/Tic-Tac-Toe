@@ -25,19 +25,21 @@ namespace Tic_Tac_Toe
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button_click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
             if (turn)
+            {
                 b.Text = "X";
+                PlayerO.BackColor = Color.Orange;
+                PlayerX.BackColor = Color.Gray;
+            }
             else
+            {
                 b.Text = "O";
-
+                PlayerX.BackColor = Color.Orange;
+                PlayerO.BackColor = Color.Gray;
+            }
             turn = !turn;
             b.Enabled = false;
 
@@ -46,30 +48,71 @@ namespace Tic_Tac_Toe
         private void winner_checker()
         {
             bool player_wins = false;
+
             //Horizontal
             if ((A1.Text == A2.Text) && (A2.Text == A3.Text) && (!A1.Enabled))
+            {
                 player_wins = true;
+                A1.BackColor = Color.Orange;
+                A2.BackColor = Color.Orange;
+                A3.BackColor = Color.Orange;
+            }
             else if ((B1.Text == B2.Text) && (B2.Text == B3.Text) && (!B1.Enabled))
+            {
                 player_wins = true;
+                B1.BackColor = Color.Orange;
+                B2.BackColor = Color.Orange;
+                B3.BackColor = Color.Orange;
+            }
             else if ((C1.Text == C2.Text) && (C2.Text == C3.Text) && (!C1.Enabled))
+            {
                 player_wins = true;
+                C1.BackColor = Color.Orange;
+                C2.BackColor = Color.Orange;
+                C3.BackColor = Color.Orange;
+            }
 
             //Vertical
             else if ((A1.Text == B1.Text) && (B1.Text == C1.Text) && (!A1.Enabled))
+            {
                 player_wins = true;
+                A1.BackColor = Color.Orange;
+                B1.BackColor = Color.Orange;
+                C1.BackColor = Color.Orange;
+            }
             else if ((A2.Text == B2.Text) && (B2.Text == C2.Text) && (!A2.Enabled))
+            {
                 player_wins = true;
+                A2.BackColor = Color.Orange;
+                B2.BackColor = Color.Orange;
+                C2.BackColor = Color.Orange;
+            }
             else if ((A3.Text == B3.Text) && (B3.Text == C3.Text) && (!A3.Enabled))
+            {
                 player_wins = true;
+                A3.BackColor = Color.Orange;
+                B3.BackColor = Color.Orange;
+                C3.BackColor = Color.Orange;
+            }
 
             //Diagonal
             else if ((A1.Text == B2.Text) && (B2.Text == C3.Text) && (!A1.Enabled))
+            {
                 player_wins = true;
+                A1.BackColor = Color.Orange;
+                B2.BackColor = Color.Orange;
+                C3.BackColor = Color.Orange;
+            }
             else if ((A3.Text == B2.Text) && (B2.Text == C1.Text) && (!C1.Enabled))
+            {
                 player_wins = true;
+                A3.BackColor = Color.Orange;
+                B2.BackColor = Color.Orange;
+                C1.BackColor = Color.Orange;
+            }
 
 
-            if(player_wins)
+            if (player_wins)
             {
                 String winner = "";
                 if (turn)
