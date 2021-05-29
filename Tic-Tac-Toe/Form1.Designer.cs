@@ -50,7 +50,7 @@ namespace Tic_Tac_Toe
             // 
             // A1
             // 
-            this.A1.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.A1.BackColor = System.Drawing.Color.Gray;
             this.A1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.A1.FlatAppearance.BorderSize = 8;
             this.A1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -66,7 +66,7 @@ namespace Tic_Tac_Toe
             // 
             // A2
             // 
-            this.A2.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.A2.BackColor = System.Drawing.Color.Gray;
             this.A2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.A2.FlatAppearance.BorderSize = 8;
             this.A2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -80,7 +80,7 @@ namespace Tic_Tac_Toe
             // 
             // A3
             // 
-            this.A3.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.A3.BackColor = System.Drawing.Color.Gray;
             this.A3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.A3.FlatAppearance.BorderSize = 8;
             this.A3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -94,7 +94,7 @@ namespace Tic_Tac_Toe
             // 
             // B3
             // 
-            this.B3.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.B3.BackColor = System.Drawing.Color.Gray;
             this.B3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.B3.FlatAppearance.BorderSize = 8;
             this.B3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -108,7 +108,7 @@ namespace Tic_Tac_Toe
             // 
             // B2
             // 
-            this.B2.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.B2.BackColor = System.Drawing.Color.Gray;
             this.B2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.B2.FlatAppearance.BorderSize = 8;
             this.B2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -122,7 +122,7 @@ namespace Tic_Tac_Toe
             // 
             // B1
             // 
-            this.B1.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.B1.BackColor = System.Drawing.Color.Gray;
             this.B1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.B1.FlatAppearance.BorderSize = 8;
             this.B1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -136,7 +136,7 @@ namespace Tic_Tac_Toe
             // 
             // C3
             // 
-            this.C3.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.C3.BackColor = System.Drawing.Color.Gray;
             this.C3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.C3.FlatAppearance.BorderSize = 8;
             this.C3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -150,7 +150,7 @@ namespace Tic_Tac_Toe
             // 
             // C2
             // 
-            this.C2.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.C2.BackColor = System.Drawing.Color.Gray;
             this.C2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.C2.FlatAppearance.BorderSize = 8;
             this.C2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -164,7 +164,7 @@ namespace Tic_Tac_Toe
             // 
             // C1
             // 
-            this.C1.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.C1.BackColor = System.Drawing.Color.Gray;
             this.C1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.C1.FlatAppearance.BorderSize = 8;
             this.C1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -189,7 +189,7 @@ namespace Tic_Tac_Toe
             // 
             // newgame
             // 
-            this.newgame.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.newgame.BackColor = System.Drawing.Color.Gray;
             this.newgame.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.newgame.FlatAppearance.BorderSize = 8;
             this.newgame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -205,7 +205,7 @@ namespace Tic_Tac_Toe
             // 
             // quitgame
             // 
-            this.quitgame.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.quitgame.BackColor = System.Drawing.Color.Gray;
             this.quitgame.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.quitgame.FlatAppearance.BorderSize = 8;
             this.quitgame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -222,7 +222,7 @@ namespace Tic_Tac_Toe
             // PlayerX
             // 
             this.PlayerX.AutoSize = true;
-            this.PlayerX.BackColor = System.Drawing.Color.Gray;
+            this.PlayerX.BackColor = System.Drawing.Color.Orange;
             this.PlayerX.Font = new System.Drawing.Font("ToyBox", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerX.Location = new System.Drawing.Point(256, 9);
             this.PlayerX.Margin = new System.Windows.Forms.Padding(0);

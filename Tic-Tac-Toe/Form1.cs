@@ -27,19 +27,20 @@ namespace Tic_Tac_Toe
 
         private void button_click(object sender, EventArgs e)
         {
+            PlayerO.BackColor = Color.Gray;
+            PlayerX.BackColor = Color.Orange;
             Button b = (Button)sender;
+
+            if (turn)
+                b.Text = "X";
+            else
+                b.Text = "O";
             if (turn)
             {
-                b.Text = "X";
                 PlayerO.BackColor = Color.Orange;
                 PlayerX.BackColor = Color.Gray;
             }
-            else
-            {
-                b.Text = "O";
-                PlayerX.BackColor = Color.Orange;
-                PlayerO.BackColor = Color.Gray;
-            }
+
             turn = !turn;
             b.Enabled = false;
             turn_count++;
@@ -152,6 +153,10 @@ namespace Tic_Tac_Toe
             try
             {
                 turn_count = 0;
+                turn = true;
+
+                PlayerO.BackColor = Color.Gray;
+                PlayerX.BackColor = Color.Orange;
 
                 A1.Enabled = true;
                 A2.Enabled = true;
@@ -162,6 +167,16 @@ namespace Tic_Tac_Toe
                 C1.Enabled = true;
                 C2.Enabled = true;
                 C3.Enabled = true;
+
+                A1.BackColor = Color.Gray;
+                A2.BackColor = Color.Gray;
+                A3.BackColor = Color.Gray;
+                B1.BackColor = Color.Gray;
+                B2.BackColor = Color.Gray;
+                B3.BackColor = Color.Gray;
+                C1.BackColor = Color.Gray;
+                C2.BackColor = Color.Gray;
+                C3.BackColor = Color.Gray;
 
                 A1.Text = "";
                 A2.Text = "";
