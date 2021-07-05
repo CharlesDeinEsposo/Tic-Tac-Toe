@@ -14,6 +14,7 @@ namespace Tic_Tac_Toe
     {
         bool turn = true;
         int turn_count = 0;
+        int addscore;
 
         public TicTacToe()
         {
@@ -127,9 +128,17 @@ namespace Tic_Tac_Toe
 
                 String winner = "";
                 if (turn)
+                {
                     winner = "O";
+                    addscore = int.Parse(o_scorebox.Text);
+                    o_scorebox.Text = Convert.ToString(addscore + 1);
+                }
                 else
+                {
                     winner = "X";
+                    addscore = int.Parse(x_scorebox.Text);
+                    x_scorebox.Text = Convert.ToString(addscore + 1);
+                }
 
                 MessageBox.Show("Player " + winner + " wins!");
             }

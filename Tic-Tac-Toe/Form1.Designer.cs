@@ -268,30 +268,32 @@ namespace Tic_Tac_Toe
             // 
             this.x_scorebox.BackColor = System.Drawing.Color.Gray;
             this.x_scorebox.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.x_scorebox.FlatAppearance.BorderSize = 4;
+            this.x_scorebox.FlatAppearance.BorderSize = 3;
             this.x_scorebox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.x_scorebox.Font = new System.Drawing.Font("ToyBox", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.x_scorebox.Font = new System.Drawing.Font("ToyBox", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.x_scorebox.ForeColor = System.Drawing.Color.Black;
             this.x_scorebox.Location = new System.Drawing.Point(242, 504);
             this.x_scorebox.Name = "x_scorebox";
             this.x_scorebox.Size = new System.Drawing.Size(218, 37);
             this.x_scorebox.TabIndex = 12;
             this.x_scorebox.Text = "0";
+            this.x_scorebox.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.x_scorebox.UseVisualStyleBackColor = false;
             // 
             // o_scorebox
             // 
             this.o_scorebox.BackColor = System.Drawing.Color.Gray;
             this.o_scorebox.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.o_scorebox.FlatAppearance.BorderSize = 4;
+            this.o_scorebox.FlatAppearance.BorderSize = 3;
             this.o_scorebox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.o_scorebox.Font = new System.Drawing.Font("ToyBox", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.o_scorebox.Font = new System.Drawing.Font("ToyBox", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.o_scorebox.ForeColor = System.Drawing.Color.Black;
             this.o_scorebox.Location = new System.Drawing.Point(242, 552);
             this.o_scorebox.Name = "o_scorebox";
             this.o_scorebox.Size = new System.Drawing.Size(218, 37);
             this.o_scorebox.TabIndex = 13;
             this.o_scorebox.Text = "0";
+            this.o_scorebox.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.o_scorebox.UseVisualStyleBackColor = false;
             // 
             // x_scorelabel
