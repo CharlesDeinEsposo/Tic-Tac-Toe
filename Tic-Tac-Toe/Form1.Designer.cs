@@ -45,6 +45,11 @@ namespace Tic_Tac_Toe
             this.PlayerX = new System.Windows.Forms.Label();
             this.PlayerO = new System.Windows.Forms.Label();
             this.turn_label = new System.Windows.Forms.Label();
+            this.x_scorebox = new System.Windows.Forms.Button();
+            this.o_scorebox = new System.Windows.Forms.Button();
+            this.x_scorelabel = new System.Windows.Forms.Label();
+            this.o_scorelabel = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,7 +64,7 @@ namespace Tic_Tac_Toe
             this.A1.Location = new System.Drawing.Point(13, 89);
             this.A1.Name = "A1";
             this.A1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.A1.Size = new System.Drawing.Size(145, 137);
+            this.A1.Size = new System.Drawing.Size(145, 130);
             this.A1.TabIndex = 0;
             this.A1.UseVisualStyleBackColor = false;
             this.A1.Click += new System.EventHandler(this.button_click);
@@ -73,7 +78,7 @@ namespace Tic_Tac_Toe
             this.A2.Font = new System.Drawing.Font("ToyBox", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.A2.Location = new System.Drawing.Point(164, 89);
             this.A2.Name = "A2";
-            this.A2.Size = new System.Drawing.Size(145, 137);
+            this.A2.Size = new System.Drawing.Size(145, 130);
             this.A2.TabIndex = 1;
             this.A2.UseVisualStyleBackColor = false;
             this.A2.Click += new System.EventHandler(this.button_click);
@@ -87,7 +92,7 @@ namespace Tic_Tac_Toe
             this.A3.Font = new System.Drawing.Font("ToyBox", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.A3.Location = new System.Drawing.Point(315, 89);
             this.A3.Name = "A3";
-            this.A3.Size = new System.Drawing.Size(145, 137);
+            this.A3.Size = new System.Drawing.Size(145, 130);
             this.A3.TabIndex = 2;
             this.A3.UseVisualStyleBackColor = false;
             this.A3.Click += new System.EventHandler(this.button_click);
@@ -99,9 +104,9 @@ namespace Tic_Tac_Toe
             this.B3.FlatAppearance.BorderSize = 8;
             this.B3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B3.Font = new System.Drawing.Font("ToyBox", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.B3.Location = new System.Drawing.Point(315, 232);
+            this.B3.Location = new System.Drawing.Point(315, 226);
             this.B3.Name = "B3";
-            this.B3.Size = new System.Drawing.Size(145, 137);
+            this.B3.Size = new System.Drawing.Size(145, 130);
             this.B3.TabIndex = 5;
             this.B3.UseVisualStyleBackColor = false;
             this.B3.Click += new System.EventHandler(this.button_click);
@@ -113,9 +118,9 @@ namespace Tic_Tac_Toe
             this.B2.FlatAppearance.BorderSize = 8;
             this.B2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B2.Font = new System.Drawing.Font("ToyBox", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.B2.Location = new System.Drawing.Point(164, 232);
+            this.B2.Location = new System.Drawing.Point(164, 226);
             this.B2.Name = "B2";
-            this.B2.Size = new System.Drawing.Size(145, 137);
+            this.B2.Size = new System.Drawing.Size(145, 130);
             this.B2.TabIndex = 4;
             this.B2.UseVisualStyleBackColor = false;
             this.B2.Click += new System.EventHandler(this.button_click);
@@ -127,9 +132,9 @@ namespace Tic_Tac_Toe
             this.B1.FlatAppearance.BorderSize = 8;
             this.B1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B1.Font = new System.Drawing.Font("ToyBox", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.B1.Location = new System.Drawing.Point(13, 232);
+            this.B1.Location = new System.Drawing.Point(13, 226);
             this.B1.Name = "B1";
-            this.B1.Size = new System.Drawing.Size(145, 137);
+            this.B1.Size = new System.Drawing.Size(145, 130);
             this.B1.TabIndex = 3;
             this.B1.UseVisualStyleBackColor = false;
             this.B1.Click += new System.EventHandler(this.button_click);
@@ -141,9 +146,9 @@ namespace Tic_Tac_Toe
             this.C3.FlatAppearance.BorderSize = 8;
             this.C3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.C3.Font = new System.Drawing.Font("ToyBox", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.C3.Location = new System.Drawing.Point(315, 375);
+            this.C3.Location = new System.Drawing.Point(315, 364);
             this.C3.Name = "C3";
-            this.C3.Size = new System.Drawing.Size(145, 137);
+            this.C3.Size = new System.Drawing.Size(145, 130);
             this.C3.TabIndex = 8;
             this.C3.UseVisualStyleBackColor = false;
             this.C3.Click += new System.EventHandler(this.button_click);
@@ -155,9 +160,9 @@ namespace Tic_Tac_Toe
             this.C2.FlatAppearance.BorderSize = 8;
             this.C2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.C2.Font = new System.Drawing.Font("ToyBox", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.C2.Location = new System.Drawing.Point(164, 375);
+            this.C2.Location = new System.Drawing.Point(164, 364);
             this.C2.Name = "C2";
-            this.C2.Size = new System.Drawing.Size(145, 137);
+            this.C2.Size = new System.Drawing.Size(145, 130);
             this.C2.TabIndex = 7;
             this.C2.UseVisualStyleBackColor = false;
             this.C2.Click += new System.EventHandler(this.button_click);
@@ -169,9 +174,9 @@ namespace Tic_Tac_Toe
             this.C1.FlatAppearance.BorderSize = 8;
             this.C1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.C1.Font = new System.Drawing.Font("ToyBox", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.C1.Location = new System.Drawing.Point(13, 375);
+            this.C1.Location = new System.Drawing.Point(13, 364);
             this.C1.Name = "C1";
-            this.C1.Size = new System.Drawing.Size(145, 137);
+            this.C1.Size = new System.Drawing.Size(145, 130);
             this.C1.TabIndex = 6;
             this.C1.UseVisualStyleBackColor = false;
             this.C1.Click += new System.EventHandler(this.button_click);
@@ -182,7 +187,7 @@ namespace Tic_Tac_Toe
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.newgame);
             this.panel1.Controls.Add(this.quitgame);
-            this.panel1.Location = new System.Drawing.Point(13, 519);
+            this.panel1.Location = new System.Drawing.Point(13, 598);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(447, 68);
             this.panel1.TabIndex = 9;
@@ -259,14 +264,89 @@ namespace Tic_Tac_Toe
             this.turn_label.TabIndex = 13;
             this.turn_label.Text = "TURN:";
             // 
+            // x_scorebox
+            // 
+            this.x_scorebox.BackColor = System.Drawing.Color.Gray;
+            this.x_scorebox.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.x_scorebox.FlatAppearance.BorderSize = 4;
+            this.x_scorebox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.x_scorebox.Font = new System.Drawing.Font("ToyBox", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.x_scorebox.ForeColor = System.Drawing.Color.Black;
+            this.x_scorebox.Location = new System.Drawing.Point(242, 504);
+            this.x_scorebox.Name = "x_scorebox";
+            this.x_scorebox.Size = new System.Drawing.Size(218, 37);
+            this.x_scorebox.TabIndex = 12;
+            this.x_scorebox.Text = "0";
+            this.x_scorebox.UseVisualStyleBackColor = false;
+            // 
+            // o_scorebox
+            // 
+            this.o_scorebox.BackColor = System.Drawing.Color.Gray;
+            this.o_scorebox.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.o_scorebox.FlatAppearance.BorderSize = 4;
+            this.o_scorebox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.o_scorebox.Font = new System.Drawing.Font("ToyBox", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.o_scorebox.ForeColor = System.Drawing.Color.Black;
+            this.o_scorebox.Location = new System.Drawing.Point(242, 552);
+            this.o_scorebox.Name = "o_scorebox";
+            this.o_scorebox.Size = new System.Drawing.Size(218, 37);
+            this.o_scorebox.TabIndex = 13;
+            this.o_scorebox.Text = "0";
+            this.o_scorebox.UseVisualStyleBackColor = false;
+            // 
+            // x_scorelabel
+            // 
+            this.x_scorelabel.AutoSize = true;
+            this.x_scorelabel.BackColor = System.Drawing.Color.Orange;
+            this.x_scorelabel.Font = new System.Drawing.Font("ToyBox", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.x_scorelabel.Location = new System.Drawing.Point(205, 501);
+            this.x_scorelabel.Margin = new System.Windows.Forms.Padding(0);
+            this.x_scorelabel.Name = "x_scorelabel";
+            this.x_scorelabel.Padding = new System.Windows.Forms.Padding(3, 0, 1, 3);
+            this.x_scorelabel.Size = new System.Drawing.Size(45, 41);
+            this.x_scorelabel.TabIndex = 14;
+            this.x_scorelabel.Text = "X";
+            // 
+            // o_scorelabel
+            // 
+            this.o_scorelabel.AutoSize = true;
+            this.o_scorelabel.BackColor = System.Drawing.Color.Orange;
+            this.o_scorelabel.Font = new System.Drawing.Font("ToyBox", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.o_scorelabel.Location = new System.Drawing.Point(205, 551);
+            this.o_scorelabel.Margin = new System.Windows.Forms.Padding(0);
+            this.o_scorelabel.Name = "o_scorelabel";
+            this.o_scorelabel.Padding = new System.Windows.Forms.Padding(3, 0, 1, 3);
+            this.o_scorelabel.Size = new System.Drawing.Size(46, 41);
+            this.o_scorelabel.TabIndex = 15;
+            this.o_scorelabel.Text = "O";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Gray;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label3.Font = new System.Drawing.Font("ToyBox", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(13, 520);
+            this.label3.Margin = new System.Windows.Forms.Padding(0);
+            this.label3.Name = "label3";
+            this.label3.Padding = new System.Windows.Forms.Padding(3, 0, 1, 3);
+            this.label3.Size = new System.Drawing.Size(184, 56);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "SCORE:";
+            // 
             // TicTacToe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BackgroundImage = global::Tic_Tac_Toe.Properties.Resources._5570238;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(472, 599);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(472, 676);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.o_scorelabel);
+            this.Controls.Add(this.x_scorelabel);
+            this.Controls.Add(this.o_scorebox);
+            this.Controls.Add(this.x_scorebox);
             this.Controls.Add(this.turn_label);
             this.Controls.Add(this.PlayerO);
             this.Controls.Add(this.PlayerX);
@@ -309,6 +389,11 @@ namespace Tic_Tac_Toe
         private System.Windows.Forms.Label PlayerX;
         private System.Windows.Forms.Label PlayerO;
         private System.Windows.Forms.Label turn_label;
+        private System.Windows.Forms.Button x_scorebox;
+        private System.Windows.Forms.Button o_scorebox;
+        private System.Windows.Forms.Label x_scorelabel;
+        private System.Windows.Forms.Label o_scorelabel;
+        private System.Windows.Forms.Label label3;
     }
 }
 
